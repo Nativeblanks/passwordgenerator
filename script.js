@@ -1,5 +1,7 @@
+// assign generate to variable
 var generateBtn = document.querySelector("#generate");
 
+// function for password conditions 
 function writePassword () {
   const length = window.prompt("How long would you like your password to be? (Has to be between 8 and 128)")
 
@@ -55,19 +57,19 @@ console.log(endPassword)
 return endPassword
 
 }
-
+// randomly slects a number from the character code starting at position 97
 function getRandomLower () {
   return String.fromCharCode(Math.floor(Math.random()*26) + 97)
 }
-
+// randomly slects a number from the character code starting at position 65
 function getRandomUpper () {
-  return String.fromCharCode(Math.floor(Math.random()*26) + 97)
+  return String.fromCharCode(Math.floor(Math.random()*26) + 65)
 }
-
+// randomly slects a number from the character code starting at position 48
 function getRandomNumber () {
-  return String.fromCharCode(Math.floor(Math.random()*26) + 97)
+  return String.fromCharCode(Math.floor(Math.random()*26) + 48)
 }
-
+// randomly slects a symbol from the symbols const
 function getRandomSymbol () {
     const symbols = "!@#$%^&*()[]{}"
   return symbols[Math.floor(Math.random()* symbols.length)];
